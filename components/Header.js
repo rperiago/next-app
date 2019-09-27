@@ -76,7 +76,7 @@ export default function Header() {
             <MenuIcon />
           </IconButton> */}
           <div className="menu">
-            <Link className="link" href="/">
+            <Link href="/">
               <Button className={classes.menuButton}  component="a">Home</Button>
             </Link>
             <Link href="/about">

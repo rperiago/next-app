@@ -211,7 +211,6 @@ function Header() {
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
-    className: "link",
     href: "/",
     __source: {
       fileName: _jsxFileName,
