@@ -2126,13 +2126,21 @@ function Index(props) {
     },
     __self: this
   }, __jsx(_material_ui_core_ListSubheader__WEBPACK_IMPORTED_MODULE_7___default.a, {
-    component: "div",
+    component: "h1",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39
     },
     __self: this
-  }, "Batma")), props.shows.map(show => __jsx(_material_ui_core_GridListTile__WEBPACK_IMPORTED_MODULE_5___default.a, {
+  }, "Batman")), props.shows.map(show => __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/p/[id]",
+    as: `/p/${show.id}`,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, __jsx(_material_ui_core_GridListTile__WEBPACK_IMPORTED_MODULE_5___default.a, {
     key: show.id,
     __source: {
       fileName: _jsxFileName,
@@ -2147,15 +2155,7 @@ function Index(props) {
       lineNumber: 44
     },
     __self: this
-  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/p/[id]",
-    as: `/p/${show.id}`,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
-  }, __jsx(_material_ui_core_GridListTileBar__WEBPACK_IMPORTED_MODULE_6___default.a, {
+  }), __jsx(_material_ui_core_GridListTileBar__WEBPACK_IMPORTED_MODULE_6___default.a, {
     title: show.name,
     subtitle: __jsx("span", {
       __source: {

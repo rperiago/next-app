@@ -24242,7 +24242,7 @@ function About() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 3:
 /*!***********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fricardoperiago%2Fwww%2Fnext-app%2Fpages%2Fabout.js ***!
   \***********************************************************************************************************************************/
@@ -24265,5 +24265,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=about.js.map

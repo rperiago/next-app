@@ -25346,14 +25346,22 @@ function Index(props) {
     },
     __self: this
   }, __jsx(_material_ui_core_ListSubheader__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    component: "div",
+    component: "h1",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39
     },
     __self: this
-  }, "Batma")), props.shows.map(function (show) {
-    return __jsx(_material_ui_core_GridListTile__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "Batman")), props.shows.map(function (show) {
+    return __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      href: "/p/[id]",
+      as: "/p/".concat(show.id),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
+      },
+      __self: this
+    }, __jsx(_material_ui_core_GridListTile__WEBPACK_IMPORTED_MODULE_7__["default"], {
       key: show.id,
       __source: {
         fileName: _jsxFileName,
@@ -25368,15 +25376,7 @@ function Index(props) {
         lineNumber: 44
       },
       __self: this
-    }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      href: "/p/[id]",
-      as: "/p/".concat(show.id),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 45
-      },
-      __self: this
-    }, __jsx(_material_ui_core_GridListTileBar__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    }), __jsx(_material_ui_core_GridListTileBar__WEBPACK_IMPORTED_MODULE_8__["default"], {
       title: show.name,
       subtitle: __jsx("span", {
         __source: {

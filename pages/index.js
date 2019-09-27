@@ -36,13 +36,13 @@ export default function Index(props) {
       <div className={classes.root}>
         <GridList cellHeight={180} className={classes.gridList}>
           <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
-            <ListSubheader component="div">Batma</ListSubheader>
+            <ListSubheader component="h1">Batman</ListSubheader>
           </GridListTile>
           {props.shows.map(show => (
-            
+            <Link href="/p/[id]" as={`/p/${show.id}`}>
               <GridListTile key={show.id}>
                 <img src={show.image.medium} alt={show.name} />
-                <Link href="/p/[id]" as={`/p/${show.id}`}>
+                
                 <GridListTileBar
                   title={show.name}
                   subtitle={<span>Type: {show.type}</span>}
@@ -52,9 +52,9 @@ export default function Index(props) {
                     </IconButton>
                   }
                 />
-                </Link>
+                
               </GridListTile>
-            
+              </Link>
           ))}
         </GridList>
       </div>
