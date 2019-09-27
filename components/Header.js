@@ -1,10 +1,10 @@
 import AppBar from "@material-ui/core/AppBar";
 import { fade, makeStyles } from "@material-ui/core/styles";
 import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
+// import IconButton from '@material-ui/core/IconButton';
+import Button from '@material-ui/core/Button';
 import InputBase from '@material-ui/core/InputBase';
-import MenuIcon from '@material-ui/icons/Menu';
+// import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import Link from "next/link";
 
@@ -12,18 +12,17 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
   },
-  menuButton: {
-    marginRight: theme.spacing(2)
-  },
-  title: {
+  menu:{
     flexGrow: 1,
-    display: "none",
-    [theme.breakpoints.up("sm")]: {
-      display: "block"
-    }
+  },
+
+  menuButton: {
+    marginRight: theme.spacing(2),
+    color: '#FFFFFF'
   },
   search: {
-    position: "relative",
+    position: "absolute",
+    right: '1%',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: fade(theme.palette.common.white, 0.15),
     "&:hover": {
@@ -63,25 +62,27 @@ const useStyles = makeStyles(theme => ({
 
 export default function Header() {
   const classes = useStyles();
+  
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
+          {/* <IconButton
             edge="start"
             className={classes.menuButton}
             color="inherit"
             aria-label="open drawer"
           >
             <MenuIcon />
-          </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>Periogro </Typography>
-          <Link href="/">
-            <a >Home</a>
-          </Link>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
+          </IconButton> */}
+          <div className="menu">
+            <Link className="link" href="/">
+              <Button className={classes.menuButton}  component="a">Home</Button>
+            </Link>
+            <Link href="/about">
+              <Button className={classes.menuButton}  component="a">About</Button>
+            </Link>
+          </div>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
